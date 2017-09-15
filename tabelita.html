@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VOCÊ JÁ TERMINOU SEUS AFAZERES?</title>
+<link rel="stylesheet" type="text/css" href="pruu.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+  	$( "#sortable1, #sortable2, #sortable3, #sortable4" ).sortable({
+      items: "li:not(.ui-state-disabled)"
+    });
+    $( "#sortable1, #sortable2, #sortable3, #sortable4" ).sortable({
+      connectWith: ".connectedSortable"
+    });
+ 
+    $( "#sortable5" ).sortable({
+      cancel: ".ui-state-disabled"
+    });
+ 
+    $( "#sortable1 li, #sortable2 li, #sortable3 li, #sortable4 li" ).disableSelection();
+  } );
+  </script>
+</head>
+<body>
+<ul id="sortable1" class="connectedSortable">
+	<li class="ui-state-default ui-state-disabled">TO DO</li>
+	<li>pruu</li>
+</ul>
+
+<ul id="sortable2" class="connectedSortable">
+	<li class="ui-state-default ui-state-disabled">DOING</li>
+	<li>jquery</li>
+</ul>
+
+<ul id="sortable3" class="connectedSortable">
+	<li class="ui-state-default ui-state-disabled">TEST</li>
+	<li>jife</li>
+</ul>
+
+<ul id="sortable4" class="connectedSortable">
+	<li class="ui-state-default ui-state-disabled">DONE</li>
+	<li>jife</li>
+	<li>j</li>
+	<li>i</li>
+	<li>f</li>
+	<li>e</li>
+</ul>
+</body>
