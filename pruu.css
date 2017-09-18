@@ -1,15 +1,25 @@
 ul {
-	display: inline-block;
 	list-style-type: none;
 	background-color: #ffd1f5;
 	min-height: 40px;
 	margin: 0;
 	float: left;
 	margin: 5px;
-	border: 1px solid #ff0080;
 	text-align: center;
+	border: 1px solid #ff0080;
 }
 
 li {
-	
+	display: table;
+	cursor: pointer;
+}
+
+.button {
+	float: left;
+	clear: left;
+}
+
+.ui-state-disabled {
+	cursor: default;
+	display: table;
 }
