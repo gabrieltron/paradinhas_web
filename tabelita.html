@@ -1,34 +1,67 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <html>
 <head>
-<title>VOCÊ JÁ TERMINOU SEUS AFAZERES?</title>
-<link rel="stylesheet" type="text/css" href="pruu.css">
-  <script src="jquery-1.12.4.js"></script>
-  <script src="jquery-ui.js"></script>
-  <script src="script.js"></script>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <title>VOCÊ JÁ TERMINOU SEUS AFAZERES?</title>
+  <link rel="stylesheet" type="text/css" href="css/pruu.css">
+
+  <!--Import Google Icon Font-->
+  <link href="css/icon.css" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div class="lists">
-  <ul id="sortable1" class="connectedSortable">
-  	<li class="ui-state-default ui-state-disabled">TO DO</li>
-  </ul>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
 
-  <ul id="sortable2" class="connectedSortable">
-  	<li class="ui-state-default ui-state-disabled">DOING</li>
-  </ul>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a  class="brand-logo center">Campo lago é bom d+</a>
+      </div>
+  </header>
 
-  <ul id="sortable3" class="connectedSortable">
-  	<li class="ui-state-default ui-state-disabled">TEST</li>
-  </ul>
 
-  <ul id="sortable4" class="connectedSortable">
-  	<li class="ui-state-default ui-state-disabled">DONE</li>
+  <div class="lists">
+    <ul id="sortable1" class="connectedSortable">
+    	<li class="ui-state-default ui-state-disabled">TO DO</li>
+    </ul>
 
-  </ul>
-</div>
-<div class="button">
-<button id="btn1">Cadastrar afazeres</button>
-<button id="btn2">Limpar Done</button>
-</div>
+    <ul id="sortable2" class="connectedSortable">
+    	<li class="ui-state-default ui-state-disabled">DOING</li>
+    </ul>
+
+    <ul id="sortable3" class="connectedSortable">
+    	<li class="ui-state-default ui-state-disabled">TEST</li>
+    </ul>
+
+    <ul id="sortable4" class="connectedSortable">
+    	<li class="ui-state-default ui-state-disabled">DONE</li>
+
+    </ul>
+  </div>
+  <div class="button">
+  <a class="waves-effect waves-light btn" id="btn1">Cadastrar afazer</a>
+  <a class="waves-effect waves-light btn" id="btn2">Limpar done</a>
+  </div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">THAT'S JUST MY FRIDAY NIGHT HONEY</div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © roubei essa prioridade intelectual de uma criança
+      </div>
+    </div>
+  </footer>
 </body>
+</html>
