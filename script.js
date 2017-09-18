@@ -15,6 +15,12 @@ $( function() {
   $("#btn1").click(function(){
     var afazer = prompt("Qual será seu novo afazer?");
     var atual =  $("#sortable1").html();
+    if (afazer != null && afazer != "")
     $("#sortable1").html(atual + "<li>" + afazer + "</li>");
   });
+
+  $("#btn2").click(function(){
+    $("#sortable4 li").not(".ui-state-disabled").remove();
+  });
+
 } );

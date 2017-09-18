@@ -1,17 +1,20 @@
 ul {
-	list-style-type: none;
+	list-style: none;
 	background-color: #ffd1f5;
 	min-height: 40px;
-	margin: 0;
 	float: left;
 	margin: 5px;
-	text-align: center;
 	border: 1px solid #ff0080;
+	padding: 5px;
 }
 
 li {
-	display: table;
+	margin-top: 2px;
 	cursor: pointer;
+	border: 1px solid #1453ba;
+	width: 100%;
+	background-color: #a0c4ff;
+	color: #f2f202;
 }
 
 .button {
@@ -22,4 +25,8 @@ li {
 .ui-state-disabled {
 	cursor: default;
 	display: table;
+	background-color: transparent;
+	border: 0;
+	color: black;
+	font-weight: bold;
 }
