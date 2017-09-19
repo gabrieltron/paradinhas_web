@@ -15,10 +15,10 @@
 <body>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="js/jquery-1.12.4.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
 
   <header>
     <nav>
@@ -27,29 +27,39 @@
       </div>
   </header>
 
+  <main>
+    <div class="lists">
+      <div class="row">
+        <ul id="sortable1" class="connectedSortable collection col s3">
+        	<li class="ui-state-default ui-state-disabled collection-item">TO DO</li>
+        </ul>
 
-  <div class="lists">
-    <ul id="sortable1" class="connectedSortable">
-    	<li class="ui-state-default ui-state-disabled">TO DO</li>
-    </ul>
+        <ul id="sortable2" class="connectedSortable collection col s3">
+        	<li class="ui-state-default ui-state-disabled collection-item">DOING</li>
+        </ul>
 
-    <ul id="sortable2" class="connectedSortable">
-    	<li class="ui-state-default ui-state-disabled">DOING</li>
-    </ul>
+        <ul id="sortable3" class="connectedSortable collection col s3">
+        	<li class="ui-state-default ui-state-disabled collection-item">TEST</li>
+        </ul>
 
-    <ul id="sortable3" class="connectedSortable">
-    	<li class="ui-state-default ui-state-disabled">TEST</li>
-    </ul>
-
-    <ul id="sortable4" class="connectedSortable">
-    	<li class="ui-state-default ui-state-disabled">DONE</li>
-
-    </ul>
-  </div>
-  <div class="button">
-  <a class="waves-effect waves-light btn" id="btn1">Cadastrar afazer</a>
-  <a class="waves-effect waves-light btn" id="btn2">Limpar done</a>
-  </div>
+        <ul id="sortable4" class="connectedSortable collection col s3">
+        	<li class="ui-state-default ui-state-disabled collection-item">DONE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="add-remove">
+      <div class="row">
+        <div class="input-field col s6 offset-s3">
+          <input id="todo" type="text">
+          <label for="todo">Digite um afazer</label>
+        </div>
+      </div>
+      <div class="row">
+        <a class="waves-effect waves-light btn col s3 offset-s3" id="btn1">Cadastrar afazer</a>
+        <a class="waves-effect waves-light btn col s3" id="btn2">Limpar done</a>
+      </div>
+    </div>
+  </main>
 
   <footer class="page-footer">
     <div class="container">
