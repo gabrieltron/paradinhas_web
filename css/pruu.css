@@ -1,5 +1,6 @@
 ul {
 	float: left;
+	min-height: : 100%;
 }
 
 #sortable1, #sortable2, #sortable3, #sortable4 {
@@ -8,7 +9,7 @@ ul {
 
 li {
 	cursor: pointer;
-	width: 100%;
+	word-wrap: break-word;
 }
 
 .button {
@@ -16,6 +17,5 @@ li {
 
 .ui-state-disabled {
 	cursor: default;
-	color: black;
 	font-weight: bold;
 }
